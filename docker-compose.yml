@@ -1,0 +1,61 @@
+version: '3'
+services:
+  ### Postgres database for sell
+  db-sell:
+    container_name: db-sell
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: db_sell
+      POSTGRES_USER: adroyoyo
+      POSTGRES_PASSWORD: __adri__23
+    ports:
+      - 5431:5431
+    expose:
+      - 5431
+    command: -p 5431
+
+    ### MySQL database for bakery
+    db-bakery:
+      container_name: db-bakery
+      image: mysql:latest
+      restart: unless-stopped
+      environment:
+        MYSQL_DATABASE: db_bakery
+        MYSQL_USER: adroyoyo
+        MYSQL_PASSWORD: __adri__23
+        MYSQL_ROOT_PASSWORD: root
+      port:
+        - 3306:3306
+      expose:
+        - 3306
+
+    ### Postgres database for client
+    db-client:
+      container_name: db_client
+      image: postgres:latest
+      restart: unless-stopped
+      environment:
+        POSTGRES_DB: db-client
+        POSTGRES_USER: adroyoyo
+        POSTGRES_PASSWORD: __adri__23
+      ports:
+        - 5432:5431
+      expose:
+        - 5432
+      command: -p 5432
+
+    ### Postgres database for client
+    db-user:
+     container_name: db_user
+     image: postgres:latest
+     restart: unless-stopped
+     environment:
+       POSTGRES_DB: db-user
+       POSTGRES_USER: adroyoyo
+       POSTGRES_PASSWORD: __adri__23
+     ports:
+       - 5433:5431
+     expose:
+       - 5433
+     command: -p 5433
