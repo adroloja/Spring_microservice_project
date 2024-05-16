@@ -1,4 +1,4 @@
-package com.adroyoyo.sell.domain.entity;
+package com.adroyoyo.user.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

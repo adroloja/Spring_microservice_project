@@ -1,7 +1,7 @@
-package com.adroyoyo.sell.domain.controller;
+package com.adroyoyo.user.domain.controllers;
 
-import com.adroyoyo.sell.domain.dto.request.UserRequest;
-import com.adroyoyo.sell.domain.service.impl.UserServiceImpl;
+import com.adroyoyo.user.domain.dto.request.UserRequest;
+import com.adroyoyo.user.domain.services.impl.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

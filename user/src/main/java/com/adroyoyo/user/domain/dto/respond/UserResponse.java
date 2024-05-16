@@ -1,6 +1,6 @@
-package com.adroyoyo.sell.domain.dto.request;
+package com.adroyoyo.user.domain.dto.respond;
 
-import com.adroyoyo.sell.domain.entity.Role;
+import com.adroyoyo.user.domain.entities.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserRequest {
+public class UserResponse {
 
     private long id;
     private String email;

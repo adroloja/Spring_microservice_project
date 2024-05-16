@@ -1,6 +1,6 @@
-package com.adroyoyo.sell.domain.repository;
+package com.adroyoyo.user.domain.repositories;
 
-import com.adroyoyo.sell.domain.entity.UserEntity;
+import com.adroyoyo.user.domain.entities.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
